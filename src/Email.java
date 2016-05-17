@@ -22,6 +22,5 @@ public class Email {
         this.body = body;
         this.destination = destination;
         this.time = 0;
-
     }
 }

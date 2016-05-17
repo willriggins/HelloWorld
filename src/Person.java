@@ -46,6 +46,4 @@ public class Person { // public is an access modifier, ie anything in java can a
     public static boolean isValidName(String newName) {
         return newName.contains(" ");
     }
-
-
 }
