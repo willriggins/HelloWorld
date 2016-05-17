@@ -11,5 +11,6 @@ public class Airplane {
     int numberOfEngines;
     double fuelTankSize;
     String serviceBranch;
-    Airplane[] model = new Airplane[2];
+    String name;
+    Airplane[] wingman = new Airplane[2];
 }
