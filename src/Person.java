@@ -3,12 +3,17 @@
  */
 // this.name says it's a field inside of a class that we're in right now.
 //void indicates that it doesnt return anything
-public class Person { // public is an access modifier, ie anything in java can access this class
-    static int familySize = 10;
+public class Person {
+    static final int familySize = 10;
     String name;
     int age;
     boolean isAlive;
     Person[] family = new Person[familySize];
+    Email email;
+
+    public Person() {
+
+    }
 
     public Person(String name, int age, boolean isAlive) {
         this.name = name;
