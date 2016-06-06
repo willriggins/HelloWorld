@@ -5,7 +5,7 @@ import java.util.Arrays;
  */
 // this.name says it's a field inside of a class that we're in right now.
 //void indicates that it doesnt return anything
-public class Person {
+public class Person implements Comparable {
     static final int familySize = 10;
     String name;
     int age;
@@ -63,5 +63,15 @@ public class Person {
                 ", family=" + Arrays.toString(family) +
                 ", email=" + email +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Person otherPerson = (Person) o; //check the course github for the generics version of this
+        return this.name.compareTo(otherPerson.name);
+        /** this teaches java that if it ever wants to compare person objecs,
+        * it should just be comparing their names
+         */
+
     }
 }

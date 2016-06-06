@@ -22,6 +22,8 @@ public class ReadWriteJson {
 
         /** When passing a class into serialize (or maybe json methods all together, you need a getter/setter
          * or it won't collect those fields. This only applies if you're passing in an object.
+         *
+         * HashMaps may be easier, class might be safer?
          */
 
         File f = new File("person.json");
@@ -43,4 +45,6 @@ public class ReadWriteJson {
         Person person3 = parser.parse(contents, Person.class);
         System.out.println(person3);
     }
+
+    
 }
